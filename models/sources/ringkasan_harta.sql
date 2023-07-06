@@ -1,11 +1,11 @@
 MODEL (
   name source.ringkasan_harta,
   dialect duckdb,
-  kind VIEW,
+  kind FULL,
 );
 
 SELECT 
     data_id::VARCHAR AS id_data,
     subtotal::BIGINT AS subtotal,
     total::BIGINT AS total
-FROM read_parquet('../../data/ringkasan_harta.parquet')
+FROM read_parquet('../data/ringkasan_harta.parquet')

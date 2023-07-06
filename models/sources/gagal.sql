@@ -1,8 +1,8 @@
 MODEL (
   name source.gagal,
   dialect duckdb,
-  kind VIEW,
+  kind FULL,
   tags [source, parquet]
 );
 
-SELECT data_id::VARCHAR AS id_data FROM read_parquet('../../data/gagal.parquet')
+SELECT data_id::VARCHAR AS id_data FROM read_parquet('../data/gagal.parquet')
