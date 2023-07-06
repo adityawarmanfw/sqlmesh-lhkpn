@@ -68,7 +68,7 @@ traitlets==5.9.0
 typing_extensions==4.5.0
 tzdata==2023.3
 tzlocal==4.3
-urllib3==2.0.2
+urllib3==1.26.6
 uvicorn==0.22.0
 uvloop==0.17.0
 watchfiles==0.19.0
