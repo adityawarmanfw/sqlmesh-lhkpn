@@ -12,20 +12,14 @@ WITH laporan_sebelumnya AS (
     SELECT 
         id_data AS id_data
     FROM source.laporan
-    WHERE id_lhkpn IS NOT NULL
-        AND id_lhkpn != 'QlF6c2hmYnJWTVIzM20wVjRXVkk4Zz09'
     UNION 
     SELECT
         id_lhkpn AS id_data
     FROM source.laporan
-    WHERE id_lhkpn IS NOT NULL
-        AND id_lhkpn != 'QlF6c2hmYnJWTVIzM20wVjRXVkk4Zz09'
     UNION
     SELECT
         id_lhkpn_sebelumnya AS id_data
     FROM source.laporan
-    WHERE id_lhkpn IS NOT NULL
-        AND id_lhkpn != 'QlF6c2hmYnJWTVIzM20wVjRXVkk4Zz09'
 ), laporan_gagal_ambil AS (
     SELECT id_data FROM source.gagal
 ), laporan_sebelumnya_dan_gagal_ambil AS (
