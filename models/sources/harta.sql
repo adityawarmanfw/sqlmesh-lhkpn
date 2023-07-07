@@ -5,7 +5,7 @@ MODEL (
   tags [source, parquet]
 );
 
-SELECT 
+SELECT DISTINCT
     data_id::VARCHAR AS id_data,   
     id::BIGINT AS id_harta,
     parent_id::BIGINT AS id_induk_harta,

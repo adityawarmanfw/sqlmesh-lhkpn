@@ -4,7 +4,7 @@ MODEL (
   kind FULL,
 );
 
-SELECT 
+SELECT DISTINCT
     data_id::VARCHAR AS id_data,
     subtotal::BIGINT AS subtotal,
     total::BIGINT AS total

@@ -5,7 +5,7 @@ MODEL (
   tags [source, parquet]
 );
 
-SELECT     
+SELECT DISTINCT
     data_id::VARCHAR AS id_data,
     lhkpn_id::VARCHAR AS id_lhkpn,
     lhkpn_prev_id::VARCHAR AS id_lhkpn_sebelumnya,
