@@ -2,6 +2,10 @@ gateways:
     local:
         connection:
             type: duckdb
-            database: db.db
+            database: lhkpn.db
 
 default_gateway: local
+
+model_defaults:
+    dialect: duckdb
+    owner: adityawarmanfw
