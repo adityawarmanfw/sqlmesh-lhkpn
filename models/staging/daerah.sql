@@ -6,15 +6,12 @@ MODEL (
 );
 
 SELECT 
-    id_provinsi,
-    id_kota_kabupaten,
-    id_kecamatan,
-    id_desa,
-    nama_provinsi,
-    nama_kota_kabupaten,
-    UPPER(nama_kecamatan) AS nama_kecamatan,
-    UPPER(nama_desa) AS nama_desa
-FROM seeds.desa
-LEFT JOIN seeds.kecamatan USING (id_kecamatan)
+    id_provinsi::BIGINT AS id_provinsi,
+    id_kota_kabupaten::BIGINT AS id_kota_kabupaten,
+    id_kecamatan::BIGINT AS id_kecamatan,
+    nama_provinsi::VARCHAR,
+    nama_kota_kabupaten::VARCHAR,
+    UPPER(nama_kecamatan)::VARCHAR AS nama_kecamatan
+FROM seeds.kecamatan 
 LEFT JOIN seeds.kota_kabupaten USING (id_kota_kabupaten)
 LEFT JOIN seeds.provinsi USING (id_provinsi)
