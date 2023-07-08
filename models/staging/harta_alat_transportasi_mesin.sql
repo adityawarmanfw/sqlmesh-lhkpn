@@ -2,7 +2,7 @@
 -- yang dimiliki, baik untuk keperluan pribadi atau untuk keperluan usaha.
 
 MODEL (
-  name staging.harta_bergerak,
+  name staging.harta_alat_transportasi_mesin,
   dialect duckdb,
   kind VIEW,
   tags [staging]

@@ -1,7 +1,7 @@
 MODEL (
   name staging.nik_id_lhkpn_diratakan,
   dialect duckdb,
-  kind VIEW,
+  kind FULL,
   tags [staging]
 );
 
@@ -42,7 +42,7 @@ WITH nik_id_data AS (
   FROM nik_id_data
 )
 
-SELECT 
+SELECT DISTINCT
   nik::VARCHAR,
   nama_provinsi::VARCHAR,
   nama_kota_kabupaten::VARCHAR,
