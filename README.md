@@ -1,5 +1,8 @@
 # SQLMesh LHKPN
 
+Apaan ini? 
+- https://adityawarmanfw.id/menjajal-sqlmesh/
+
 Menjalankan di lokal:
 ```
 python -m venv .env
