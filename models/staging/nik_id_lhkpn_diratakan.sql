@@ -1,7 +1,7 @@
 MODEL (
   name staging.nik_id_lhkpn_diratakan,
   dialect duckdb,
-  kind FULL,
+  kind VIEW,
   tags [staging]
 );
 

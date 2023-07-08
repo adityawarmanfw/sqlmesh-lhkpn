@@ -1,7 +1,7 @@
 MODEL (
   name staging.nik_daerah,
   dialect duckdb,
-  kind FULL,
+  kind VIEW,
   tags [staging]
 );
 
