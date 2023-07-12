@@ -1,6 +1,6 @@
 # SQLMesh LHKPN
 
-Apaan ini? 
+Ini apaan?
 - https://adityawarmanfw.id/menjajal-sqlmesh/
 
 Menjalankan di lokal:
